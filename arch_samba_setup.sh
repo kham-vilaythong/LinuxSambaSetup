@@ -51,5 +51,5 @@ sudo systemctl enable --now smb
 
 sudo systemctl enable --now wsdd
 
-echo "Who made this script they didn't add bash's safety features"
-echo "fixed by Alvin"
+echo "Who made this script they didn't add bash's safety features\n"
+echo "fixed by Alvin\n"
