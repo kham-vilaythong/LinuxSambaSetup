@@ -51,5 +51,18 @@ sudo systemctl enable --now smb
 
 sudo systemctl enable --now wsdd
 
+echo "allow firewall\n"
+
+sudo ufw allow 137/udp
+sudo ufw allow 138/udp
+
+sudo ufw allow 137/tcp
+sudo ufw allow 138/tcp
+
+sudo ufw allow from 192.168.1.0/24
+sudo ufw allow from 192.168.1.0/16
+
+sudo ufw reload
+
 echo "Who made this script they didn't add bash's safety features\n"
 echo "fixed by Alvin\n"
