@@ -20,7 +20,7 @@ echo "They didn't add 777 but the samba config has 777?"
 
 sudo chmod -R 777 /sambashare
 
-sudo pacman -Sy --noconfirm samba smbclient wsdd
+sudo pacman -Sy --noconfirm --disable-sandbox samba smbclient wsdd
 sudo tee /etc/samba/smb.conf <<'EOF'
 [global]
 server string = File Share
