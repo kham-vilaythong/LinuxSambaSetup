@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Enable exit on error and command output:
 set -eux
 echo "this sh file download nfs-utils and rpcbind and nfs-kernel-server"
@@ -15,7 +14,6 @@ tee /etc/exports <<'EOF'
 EOF
 
 exportfs -a
-
 systemctl enable --now rpcbind.socket
 echo "start nfs-server"
 systemctl enable --now nfs-server.service
