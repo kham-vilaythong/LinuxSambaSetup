@@ -16,7 +16,7 @@ EOF
 
 exportfs -a
 
-systemctl enable --now rpcbind
+systemctl enable --now rpcbind.socket
 echo "start nfs-server"
 systemctl enable --now nfs-server.service
 echo " ubuntu sudo service nfs-kernel-server start"
