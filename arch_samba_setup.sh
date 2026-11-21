@@ -65,4 +65,4 @@ sudo ufw allow from 192.168.1.0/16
 sudo ufw reload
 
 echo "Who made this script they didn't add bash's safety features\n"
-echo "fixed by Alvin\n"
+echo "fixed by Alvin \n"
